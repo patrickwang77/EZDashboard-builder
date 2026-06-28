@@ -1,0 +1,25 @@
+/**
+ * Precompiled Tailwind for the EXPORTED dashboard, so exports need no Tailwind CDN.
+ * Imported as a string via `?inline` and inlined into the generated HTML.
+ *
+ * - @source scans exportTemplate.ts so every utility class used there is emitted.
+ * - dark mode is class-based (the export toggles a `.dark` class on <html>).
+ * - brand-* colors resolve to CSS variables the export injects per theme.
+ */
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source "./exportTemplate.ts";
+
+@theme {
+  --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-900: var(--brand-900);
+  --color-brand-950: var(--brand-950);
+}

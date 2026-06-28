@@ -1,0 +1,10 @@
+# Netlify build settings for EZDashboard builder (static Vite SPA).
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback (single page; serves index.html for any unmatched path).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
