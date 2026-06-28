@@ -1,5 +1,9 @@
 # EZDashboard builder
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8aa6ec06-936c-4bce-b007-02d098a00636/deploy-status)](https://app.netlify.com/projects/ezdashboard-builder/deploys)
+
+🔗 線上版：**https://ezdashboard-builder.netlify.app**
+
 把 Excel / CSV 一鍵變成精美、可互動的網頁儀表板產生器。
 
 - **上傳即用**：拖放 Excel / CSV，自動分析欄位型別並產生 KPI 指標卡與圖表。
