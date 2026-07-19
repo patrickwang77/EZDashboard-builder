@@ -9,6 +9,3 @@ coverage/
 
 # Netlify CLI local state (site id, not needed in VCS)
 .netlify/
-
-# Local agent/project instructions — contains machine-specific paths, keep out of the public repo
-CLAUDE.md
